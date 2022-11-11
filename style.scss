@@ -46,6 +46,8 @@ a {
     animation: fadein 2s forwards;
 }
 
+.mw-120 { max-width: 120px !important;}
+
 @keyframes fadein {
     from {opacity: 0;}
     to {opacity: 1;}
