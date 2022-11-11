@@ -1,0 +1,63 @@
+:root {
+    --pink: #ff6364
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+}
+
+body {
+    background-color: var(--pink) !important;
+    overflow: overlay;
+
+}
+
+.mw-300 {
+    max-width: 200px !important;
+}
+
+.text-large {
+    font-size: 4.2rem;
+}
+
+.bg-header {
+    background-image: url('./camera.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 10%;
+}
+
+.bg-timeline {
+    background: linear-gradient(180deg, var(--pink) 10%, white, white);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.fadein {
+    opacity: 0;
+    animation: fadein 2s forwards;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+.ls {
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 900px) {
+    .bg-header {
+        background-image: none !important;
+    }
+}
